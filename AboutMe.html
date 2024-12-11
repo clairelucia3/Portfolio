@@ -1,112 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Claire's Portfolio</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <style>
-            
-      body{
-   
-    font-family:sans-serif;
-            }
+    <head>
+        <meta charset="UTF-8" />
+        <title>About Me</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous" />
+        <style>
+          
+body{
+font-family: Georgia;
+}
+          .nav-pills .nav-link.active,  .show > .nav-link {
+                color:white;
+        
+                background-color:#8b003a}
 
-      
-      
-.intro {
-    background-color: white;
+            .nav-pills .nav-link, .show > .nav-link {
+                            color:#8b003a
+                        }
+intro {
     font-size: 42px;
       }
       
-#words {
-      background-color: white;}
 
 #wordstwo {
     position:relative;
-    background-color: white
       }
       
       
-below {
-        background-color: white;
-        
+below {    
     }
-      
-      
+#footer{
+        text-align: center}
+    
+    #btn5:hover{
+        border-color:red;
+        border-radius: 50px;}
+            
+    #btn5{
+        color:white;
+        transition-property:inherit;
+        transition-duration: 0.5s;
+        text-align:center;
+        font-size:large;}
+    #btn6:hover{
+        background-color:palevioletred;
+        border-color:red;
+        border-radius:50px;
+        border-width: medium;
+        color:black}
+            
+    #btn6{
+        color:black;
+        transition-property:inherit;
+        transition-duration: 0.5s;
+        text-align:center;
+        font-size:large;
+        font-weight:600;}
+    #btn7:hover{
+        border-color:red;
+        border-radius: 50px;}
+            
+    #btn7{
+        color:white;
+        transition-property:inherit;
+        transition-duration: 0.5s;
+        text-align:center;
+        font-size:large;}
+    #btn8:hover{
+        border-color:red;
+        border-radius: 50px;}
+            
+    #btn8{
+        color:white;
+        transition-property:inherit;
+        transition-duration: 0.5s;
+        text-align:center;
+        font-size:large;}
+            
+            
+            #end{
+            color:white;
+             padding:50px;
+            background-color:#8b003a
+            }
       
         </style>
     </head>
           
     <body>
-         <nav class="nav navbar  navbar-expand-md nav-pills">
-             <div class="container">
-            <a class="navbar-brand" href="#"><img class="img-fluid object-fit-cover"
-                     src="/Images/logo.png" alt="text" width="100px"></a>
-                 <button
-                         class="navbar-toggler" 
-                         type="button"
-                         data-bs-toggle="collapse"
-                         data-bs-target="#navbar"
-                         aria-controls="navbar"
-                         aria-expanded="false"
-                         aria-label="Toggle Navigation">
-                     <span class="navbar-toggler-icon"></span>
-                         </button>
-                 
-                <div class="collapse navbar-collapse"
-                id="navbar">
-                 <div class="navbar-nav flex-grow-1 justify-content-end">
-                 
-             <a class="nav-link" href="#">Gallery</a>
-        <a class="nav-link active" href="#" aria-current="page">About Me</a>
-        <a class="nav-link" href="#">Contact</a>
-            </div>
-             </div>
-             </div></nav>
-  
-        
-        
-        <div container ="intro">
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-2"><h1> Hi, I'm Claire</h1></div>
-        </div>
-            <img class="img" src="Images/WiderAboutMe.jpg" alt="text" width="100%"></div>
-    
-    
-    <div container id="words">
-     <br /><br />
-        <div class= "row">
-            <div class= "col-7 m-5">I am a dedicated artist and graphic designer with a keen eye for detail and a deep passion for creative design. I take pride in using my talents to not only bring ideas to life but also to create meaningful experiences that resonate with people. My work is driven by a desire to inspire joy and serve as a powerful tool in visual communication and marketing</div>
-         <div class= "col-1"></div></div>
+      <nav class="navbar sticky-top bg-danger-subtle navbar-light navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"
+                    ><img class="img-fluid object-fit-cover" src="/Images/logo.png" alt="text" width="100px"
+                /></a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav nav-pills">
+            <li class="nav-item nav-pill mx-4">
+          <a class="nav-link" href="index.html"><h3>Home</h3>
+                </a></li>
+        <li class="nav-item nav-pill mx-4 dropdown">
+          <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><h3>Gallery</h3>
+            </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Gallery-Painting.html">Paintings</a></li>
+            <li><a class="dropdown-item" href="Gallery-Graphics.html">Graphics</a></li>
+            <li><a class="dropdown-item" href="Gallery-Christmas.html">Christmas Cards and Gifts</a></li>
+            </ul>
+          </li>
+        <li class="nav-item nav-pill mx-4">
+          <a class="nav-link" href="Contact.html"><h3>Contact</h3>
+            </a>
+        </li>
+        <li class="nav-item nav-pill mx-4">
+          <a class="nav-link active" aria-current="page" href="AboutMe.html"><h3>About Me</h3>
+             </a>
+            </li>
+            </ul>
+     </div>
+    </div>
+ </nav>
 
-        <div class= "row g-4">
-           <div class= "col-4"></div>
-            <div class= "col m-5">I am a 2022 graduate of Napoleon High School and am currently a third-year student at La Salle University in Philadelphia, far from my small hometown in Northwest Ohio. Throughout my journey, one of the most valuable skills I’ve developed is adaptability, which is essential in navigating evolving technologies and industry trends in Graphic Design</div>
+      <img class="img-fluid object-fit-cover" src="/Images/AboutMeBackground.png" alt="AboutMe" width="100%">
+   
+    <div container id="words">
+        <div class= "row justify-content-start">
+            <div class= "col-7 mx-5">I am a dedicated artist and graphic designer with a keen eye for detail and a deep passion for creative design. I take pride in using my talents to not only bring ideas to life but also to create meaningful experiences that resonate with people. My work is driven by a desire to inspire joy and serve as a powerful tool in visual communication and marketing</div>
+         </div>
+
+        <div class= "row justify-content-end">
+            <div class= "col-7 m-5">I am a 2022 graduate of Napoleon High School and am currently a third-year student at La Salle University in Philadelphia, far from my small hometown in Northwest Ohio. Throughout my journey, one of the most valuable skills I’ve developed is adaptability, which is essential in navigating evolving technologies and industry trends in Graphic Design</div>
         </div></div>
         
 
 
-        <div class="container-fluid" id="below">
-            <div class= "row">
-                <div class="col"><img class="img" src="Images/MuralAboutMe.png" alt="text" width="100%"></div>
-                <div class="col-6"><img class="img" src="Images/PumpkinAboutMe.png" alt="text" width="100%"></div></div>
-    </div>
+        <div class="container" id="below">
+            <div class= "row g-5">
+              <div class="col"><img class="img" src="Images/MuralAboutMe.png" alt="text" height="100%" width="100%"></div>
+                <div class="col-6 justify-content-start"><img class="img" src="Images/Image%2012-9-24%20at%2011.54%20PM.jpeg" alt="text" height="100%" width="100%"></div></div>
+            <div class= "row my-4 justify-content-center">
+                <div class= "col-8 text-center"><div class="col"><img class="img" src="Images/Claire%20Durham%20Resume.png" alt="text" height="100%" width="100%"></div></div>
+          </div></div>
         
-              <div class="container">
-      
+               <div class="container-fluid">
             <div class="row">
-                <div class= "col"><button type="button" class="btn btn-secondary" id="btn5">Let's Work Together</button></div>
-    
-         <div class="row">
-            <div class= "col-6">Claire Durham</div>
-            <div class= "col-2">Insta</div>
-            <div class= "col-2">Email</div>
-            <div class= "col-2">Welcome</div>
-                </div></div></div>
+                <div class="col-12 bg-danger-subtle" id="footer">
+                    <a class ="btn" href="Contact.html" role="button" id="btn6">Let's Work Together</a>
+                </div>
+                <div class="container-fluid">
+                <div class="row" id="end">
+                    <div class="col-6">Claire Durham</div>
+                    <div class="col-2"><a class ="btn" href="https://www.instagram.com/creating_claire_/" role="button" id="btn8">Insta</a></div>
+                    <div class="col-2"><a class ="btn" href="Contact.html" role="button" id="btn5">Contact</a></div>
+                    <div class="col-2"><a class ="btn" href="Welcome.html" role="button" id="btn7">Welcome</a></div>
+                </div></div>
+            </div>
+        </div>
         
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
+         <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    </body>
 </html>
